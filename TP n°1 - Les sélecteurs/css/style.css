@@ -58,6 +58,19 @@ header {
 .moreAndMore {
     display: block;
     background-color: #359E7B;
+    color: #FFF;
     max-width: 250px;
+    padding: 15px;
+    margin: 40px auto 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgray;
+    margin-top: 40px;
+}
+
+footer a {
     color: #FFF;
 }
