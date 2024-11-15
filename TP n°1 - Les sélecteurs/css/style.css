@@ -15,27 +15,35 @@
 
 
 body {
-    background-color: #F6F6F6;
     font-family: sans-serif;
-}
-
-main,
-header {
     max-width: 1150px;
     margin: 0 auto;
 }
 
+/* main,
+header {
+    max-width: 1150px;
+    margin: 0 auto;
+} */
+
+.container {
+    background-color: #F0F0F0;
+    padding: 50px 40px 50px;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: #359E7B;
-    padding: 15px;
+    padding-right: 25px;
 }
+
 
 /* ------------------------------------------------- */
 
+
 footer {
     background-color: darkgray;
-    margin-top: 40px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -58,7 +66,7 @@ li {
 
 li a {
     color: #F6F6F6;
-    padding: 15px;
+    padding: 30px 15px;
     display: inline-block;
 }
 
@@ -97,14 +105,13 @@ input,
 textarea {
     font-size: 25px;
     /* ajout perso */
+    box-sizing: border-box;
     border: none;
     /*  */
     border-bottom: 2px solid #359E7B;
     padding: 15px;
     margin-bottom: 20px;
     width: 100%;
-    /* ajout perso */
-    box-sizing: border-box;
 }
 
 textarea {
@@ -113,6 +120,14 @@ textarea {
     border: 2px solid #359E7B;
 }
 
+/*  */
+p {
+    text-align: justify;
+}
+
+/*  */
+
+
 /* ------------------------------------------------- */
 
 
@@ -120,7 +135,14 @@ textarea {
     color: grey;
     font-weight: bold;
     /* ajout personnel */
-    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.moreAndMore,
+.envoi {
+    background-color: #359E7B;
+    color: #FFF;
+    border-radius: 5px;
 }
 
 .link_more {
@@ -128,27 +150,30 @@ textarea {
     margin-left: auto;
     width: fit-content;
     color: #359E7B;
+    /*  */
+    margin-bottom: 15px;
 }
 
 .moreAndMore {
     display: block;
-    background-color: #359E7B;
-    color: #FFF;
     max-width: 250px;
     padding: 15px;
     margin: 40px auto 0;
-    border-radius: 5px;
     text-align: center;
 }
 
 .envoi {
-    background-color: #359E7B;
-    color: #FFF;
     border: none;
-    border-radius: 5px;
-    width: 100%;
+    /* width: 100%; */
     cursor: pointer;
-    /* ajout perso */
-    /* font-size: 25px;
-    padding: 15px; */
+}
+
+
+/* ------------------------------------------------- */
+
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 5px 5px 5px #359E7B;
 }
