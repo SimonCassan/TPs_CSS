@@ -2,6 +2,37 @@
     margin: 0;
 }
 
+
+/* ------------------------------------------------- */
+
+
+body {
+    background-color: #F6F6F6;
+    font-family: sans-serif;
+}
+
+main,
+header {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* ------------------------------------------------- */
+
+footer {
+    background-color: darkgray;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #FFF;
+}
+
+
+/* ------------------------------------------------- */
+
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -9,11 +40,6 @@ ul {
 
 li {
     display: inline-block;
-}
-
-body {
-    background-color: #F6F6F6;
-    font-family: sans-serif;
 }
 
 h1,
@@ -37,11 +63,33 @@ h2 {
     text-decoration: underline;
 }
 
-main,
-header {
-    max-width: 1150px;
+h1 {
+    color: #359E7B;
+}
+
+form {
+    max-width: 700px;
     margin: 0 auto;
 }
+
+input,
+textarea {
+    font-size: 25px;
+    border-bottom: 2px solid #359E7B;
+    padding: 15px;
+    /* margin-bottom: 20px; */
+    /* pourquoi max-width ne fait rien */
+    /* width: 100%; */
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ------------------------------------------------- */
+
 
 .dateTime {
     color: grey;
@@ -64,13 +112,4 @@ header {
     margin: 40px auto 0;
     border-radius: 5px;
     text-align: center;
-}
-
-footer {
-    background-color: darkgray;
-    margin-top: 40px;
-}
-
-footer a {
-    color: #FFF;
 }
