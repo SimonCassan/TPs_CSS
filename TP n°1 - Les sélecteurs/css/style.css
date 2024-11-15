@@ -1,3 +1,11 @@
+/*--- TABLE DES STYLES ---*/
+/*                        */
+/*  BODY-MAIN-HEADER-NAV  */
+/*       FOOTER           */
+/*   CONTENU GENERIQUE    */
+/*        CLASSES         */
+
+
 * {
     margin: 0;
 }
@@ -17,12 +25,18 @@ header {
     margin: 0 auto;
 }
 
+nav {
+    background-color: #359E7B;
+    padding: 15px;
+}
 
 /* ------------------------------------------------- */
 
 footer {
     background-color: darkgray;
     margin-top: 40px;
+    padding: 15px;
+    text-align: center;
 }
 
 footer a {
@@ -35,11 +49,25 @@ footer a {
 
 ul {
     list-style-type: none;
-    text-align: center;
+    text-align: right;
 }
 
 li {
     display: inline-block;
+}
+
+li a {
+    color: #F6F6F6;
+    padding: 15px;
+    display: inline-block;
+}
+
+h1 {
+    color: #359E7B;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 h1,
@@ -59,13 +87,6 @@ h3 {
     color: #006083;
 }
 
-h2 {
-    text-decoration: underline;
-}
-
-h1 {
-    color: #359E7B;
-}
 
 form {
     max-width: 700px;
@@ -75,17 +96,21 @@ form {
 input,
 textarea {
     font-size: 25px;
+    /* ajout perso */
+    border: none;
+    /*  */
     border-bottom: 2px solid #359E7B;
     padding: 15px;
-    /* margin-bottom: 20px; */
-    /* pourquoi max-width ne fait rien */
-    /* width: 100%; */
-    max-width: 100%;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* ajout perso */
+    box-sizing: border-box;
 }
 
 textarea {
     resize: none;
+    height: 300px;
+    border: 2px solid #359E7B;
 }
 
 /* ------------------------------------------------- */
@@ -94,6 +119,8 @@ textarea {
 .dateTime {
     color: grey;
     font-weight: bold;
+    /* ajout personnel */
+    padding: 10px 0;
 }
 
 .link_more {
@@ -112,4 +139,16 @@ textarea {
     margin: 40px auto 0;
     border-radius: 5px;
     text-align: center;
+}
+
+.envoi {
+    background-color: #359E7B;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    /* ajout perso */
+    font-size: 25px;
+    padding: 15px;
 }
