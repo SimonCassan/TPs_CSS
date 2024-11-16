@@ -15,6 +15,10 @@ header {
     padding: 80px 0;
 }
 
+nav {
+    border-top: 10px solid #F6F6F6;
+}
+
 main {
     max-width: 1150px;
     margin: 0 auto;
@@ -54,6 +58,18 @@ h3 {
     margin-bottom: 25px;
 }
 
+ul {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    width: 25%;
+}
+
 main img {
     width: 100%;
     height: 350px;
@@ -79,6 +95,13 @@ article p {
 a {
     color: #3C93F7;
     text-decoration: none;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    color: #FFF;
+    padding: 0 20px;
 }
 
 article a[href^="https"] {
@@ -110,6 +133,32 @@ article:nth-of-type(3) {
 
 article:last-of-type {
     color: #C13584;
+}
+
+nav li a {
+    padding: 30px 0;
+}
+
+nav li:first-of-type a {
+    background-color: #0E1F56;
+    border-radius: 10px 0 0 10px;
+}
+
+nav li:nth-last-of-type(2) a {
+    background-color: #E52D27;
+}
+
+nav li:nth-last-of-type(3) a {
+    background-color: #55ACEE;
+}
+
+nav li:last-of-type a {
+    background-color: #C13584;
+    border-radius: 0 10px 10px 0;
+}
+
+nav li a:hover {
+    background-color: #B318FF;
 }
 
 h2::before,
