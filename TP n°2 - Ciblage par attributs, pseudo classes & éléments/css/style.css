@@ -104,6 +104,10 @@ li a {
     padding: 0 20px;
 }
 
+footer a {
+    color: #FFF;
+}
+
 article a[href^="https"] {
     color: #0E1F56;
 }
