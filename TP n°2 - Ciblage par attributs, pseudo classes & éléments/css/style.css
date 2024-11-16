@@ -62,8 +62,9 @@ ul {
     max-width: 1150px;
     margin: 0 auto;
     display: flex;
-    text-align: center;
     list-style-type: none;
+    justify-content: center;
+    padding: 0;
 }
 
 li {
@@ -98,10 +99,18 @@ a {
 }
 
 li a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     color: #FFF;
     padding: 0 20px;
+}
+
+li a img {
+    width: 25px;
+    margin-right: 10px;
+    filter: invert(100%);
 }
 
 footer a {
