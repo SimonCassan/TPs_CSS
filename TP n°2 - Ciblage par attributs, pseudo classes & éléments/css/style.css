@@ -78,14 +78,34 @@ a {
 
 article a[href^="https"] {
     color: #0E1F56;
-    /* la couleur choisie ne se remarque pas sinon */
-    font-weight: 700;
 }
 
 main a[rel="no-follow"] {
     font-weight: 900;
 }
 
+
+/* --------------------------------------- */
+
+a:hover {
+    text-decoration: underline;
+}
+
+article:first-of-type {
+    color: #0E1F56
+}
+
+article:nth-of-type(2) {
+    color: #E52D27;
+}
+
+article:nth-of-type(3) {
+    color: #55ACEE;
+}
+
+article:last-of-type {
+    color: #C13584;
+}
 
 /* --------------------------------------- */
 
