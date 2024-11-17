@@ -1,22 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-h1,h2{
-    margin: 40px 0;
+
+/* ---------------------------------- */
+
+
+nav {
+    max-width: 1150px;
+    background-color: black;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
 }
 
-main{
+nav img {
+    width: 45px;
+    padding-left: 15px;
+}
+
+main {
     max-width: 1150px;
     margin: auto;
 }
 
-main .text{
+main .text {
     text-align: justify;
 }
 
-main img{
+main img {
     width: 300px;
+}
+
+
+/* ---------------------------------- */
+
+
+h1,
+h2 {
+    margin: 40px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    padding: 0 15px;
+    color: white;
+}
+
+
+/* ---------------------------------- */
+
+
+.imageFlottanteDroite {
+    float: right;
+}
+
+.imageFlottanteGauche {
+    float: left;
 }
