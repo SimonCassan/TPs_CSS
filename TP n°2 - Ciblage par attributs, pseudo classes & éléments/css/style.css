@@ -113,6 +113,10 @@ li a img {
     filter: invert(100%);
 }
 
+nav li a {
+    padding: 30px 0;
+}
+
 footer a {
     color: #FFF;
 }
@@ -148,9 +152,7 @@ article:last-of-type {
     color: #C13584;
 }
 
-nav li a {
-    padding: 30px 0;
-}
+
 
 nav li:first-of-type a {
     background-color: #0E1F56;
