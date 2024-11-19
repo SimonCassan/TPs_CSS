@@ -1,43 +1,18 @@
-/* #france::before,
-#france::after {
-    content: "";
-    width: 30px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+.flag {
+    margin: 40px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-#france::before {
-    background-color: #0E1F56;
-    left: -30px;
-}
+/* -----------France--------------- */
 
-#france::after {
-    background-color: #700303;
-    right: -30px;
-}
-
-#france {
-    width: 30px;
+.flag:first-of-type {
+    display: inline-block;
+    width: 90px;
     height: 60px;
     background-color: white;
     position: relative;
-    left: 30px;
-} */
-
-#allemagne {
-    width: 90px;
-    height: 20px;
-    background-color: red;
-    position: relative;
-    top: 20px;
 }
-
-
-.flag {
-    margin-bottom: 40px;
-}
-
 
 .flag:first-of-type::before,
 .flag:first-of-type::after {
@@ -50,18 +25,91 @@
 
 .flag:first-of-type::before {
     background-color: #0E1F56;
-    left: -30px;
+    left: 0;
 }
 
 .flag:first-of-type::after {
     background-color: #700303;
-    right: -30px;
+    right: 0;
 }
 
-.flag:first-of-type {
-    width: 30px;
+/* -----------Allemagne--------------- */
+
+.flag:nth-of-type(2) {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    background-color: red;
+    position: relative;
+}
+
+.flag:nth-of-type(2)::before {
+    content: "";
+    width: 90px;
+    height: 20px;
+    top: 0;
+    position: absolute;
+    background-color: black;
+}
+
+.flag:nth-of-type(2)::after {
+    content: "";
+    width: 90px;
+    height: 20px;
+    bottom: 0px;
+    position: absolute;
+    background-color: yellow;
+}
+
+
+/* -----------Japan--------------- */
+
+.flag:nth-of-type(3) {
+    display: inline-block;
+    width: 90px;
     height: 60px;
     background-color: white;
     position: relative;
-    left: 30px;
+}
+
+.flag:nth-of-type(3)::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5px;
+    left: 22.5px;
+}
+
+/* -----------Switzerland--------------- */
+
+.flag:nth-of-type(4) {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    background-color: red;
+    position: relative;
+}
+
+.flag:nth-of-type(4)::before {
+    content: "";
+    width: 40%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    top: 22.5px;
+    left: 27px;
+}
+
+.flag:nth-of-type(4)::after {
+    content: "";
+    width: 15px;
+    height: 36px;
+    background-color: white;
+    position: absolute;
+    top: 12px;
+    right: 37.5px;
+
 }
