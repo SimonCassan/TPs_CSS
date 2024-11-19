@@ -6,52 +6,48 @@
 /*                  */
 /*                  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-h1,h2{
+h1,
+h2 {
     margin: 40px 0;
 }
 
 /* HEADER & MENU DE NAVIGATION */
 
-header{
+header {
     background-color: black;
     color: white;
 }
 
-header nav{
+header nav {
     max-width: 1150px;
     margin: 0 auto;
-    display: flex;
     padding: 20px 0;
-    align-items: center;
 }
 
-header nav .logo{
-    flex: 1;
+header nav .logo {
     text-transform: uppercase;
-    width: fit-content;
 }
 
-header nav p{
+header nav p {
     border: 2px solid white;
     width: fit-content;
     padding: 15px 30px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-header nav ul{
-    display: flex;
-}
-
-header nav li{
+header nav li {
     list-style-type: none;
+    text-align: center;
 }
 
-header nav a{
+header nav a {
     display: block;
     padding: 15px 30px;
     color: white;
@@ -59,28 +55,33 @@ header nav a{
 
 /* MAIN */
 
-main{
+main {
     max-width: 1150px;
     margin: auto;
 }
 
-main .justeLeTexte{
+main .justeLeTexte {
     text-align: justify;
 }
 
-main img{
-    width: 300px;
+main img {
+    width: 100%;
     font-size: 0;
 }
 
-main .imageFlottanteDroite{
-    float: right;
-    margin-left: 30px;
-    margin-bottom: 15px;
+main .imageFlottanteDroite,
+main .imageFlottanteGauche {
+    margin-bottom: 30px;
 }
 
-main .imageFlottanteGauche{
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 15px;
+
+/* HEADER & MAIN */
+
+header,
+main {
+    padding: 0 20px;
+}
+
+nav {
+    padding: 20px;
 }
