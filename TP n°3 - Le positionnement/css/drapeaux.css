@@ -39,7 +39,7 @@
     display: inline-block;
     width: 90px;
     height: 60px;
-    background-color: red;
+    background-color: #f00;
     position: relative;
 }
 
@@ -58,11 +58,11 @@
     height: 20px;
     bottom: 0px;
     position: absolute;
-    background-color: yellow;
+    background-color: #fc0;
 }
 
 
-/* -----------Japan--------------- */
+/* -----------Japon--------------- */
 
 .flag:nth-of-type(3) {
     display: inline-block;
@@ -76,14 +76,14 @@
     content: "";
     width: 45px;
     height: 45px;
-    background-color: red;
+    background-color: #bc002d;
     border-radius: 50%;
     position: absolute;
     top: 7.5px;
     left: 22.5px;
 }
 
-/* -----------Switzerland--------------- */
+/* -----------Suisse--------------- */
 
 .flag:nth-of-type(4) {
     display: inline-block;
@@ -99,17 +99,63 @@
     height: 20%;
     background-color: white;
     position: absolute;
-    top: 22.5px;
-    left: 27px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .flag:nth-of-type(4)::after {
     content: "";
-    width: 15px;
+    width: 12px;
     height: 36px;
     background-color: white;
     position: absolute;
-    top: 12px;
-    right: 37.5px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
 
+/* -----------Norvège--------------- */
+
+.flag:nth-of-type(5) {
+    display: inline-block;
+    width: 90px;
+    position: relative;
+    aspect-ratio: 8 / 5;
+    background:
+        linear-gradient(#ffffff00 45%, #00205B 45% 55%, #ffffff00 0),
+        linear-gradient(90deg, #ffffff00 37%, #00205B 37% 43%, #ffffff00 43%),
+        linear-gradient(#ffffff00 41%, #ffffff 41% 59%, #ffffff00 0),
+        linear-gradient(90deg, #ffffff00 33%, #ffffff 33% 47%, #ffffff00 45%),
+        #BA0C2F;
+}
+
+/* ------Benin-------------- */
+
+.flag:nth-of-type(6) {
+    display: inline-block;
+    width: 90px;
+    position: relative;
+    aspect-ratio: 3 / 2;
+    background: conic-gradient(at 40% 50%, #fcd20f 25%, #e90929 0 50%, #008850 0);
+}
+
+/* ------Cameroun-------------- */
+
+.flag:last-of-type {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    position: relative;
+    background: linear-gradient(90deg, #007A5E 33.33%, #CE1126 0 66.66%, #FCD116 0);
+}
+
+.flag:last-of-type::before {
+    content: "\2605";
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FCD116;
 }
