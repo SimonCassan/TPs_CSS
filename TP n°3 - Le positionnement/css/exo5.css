@@ -1,6 +1,20 @@
+/*--- TABLE DES STYLES ---*/
+/*                        */
+/*  BODY-NAV--FOOTER      */
+/*   CONTENU GENERIQUE    */
+/*        CLASSES         */
+
+
+
+/* ------------------------------------------------- */
+
 * {
     margin: 0;
 }
+
+
+/* ------------------------------------------------- */
+
 
 body {
     background-color: black;
@@ -10,12 +24,63 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+nav ul,
+nav p {
+    border: 5px solid orange;
+    /* padding: 10px 15px; */
+}
+
+nav li:hover {
+    background-color: orange;
+}
+
+nav li:hover a {
+    color: black;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav li,
+nav p {
+    padding: 15px 30px;
+}
+
+nav p {
+    color: orange;
+    font-weight: bold;
+}
+
 footer {
     margin-top: 80px;
     margin-bottom: 30px;
     text-align: center;
 }
 
+footer a,
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------------- */
 
 h1,
 h2 {
@@ -54,7 +119,7 @@ p {
 }
 
 a {
-    color: orangered;
+    color: orange;
 }
 
 figcaption {
@@ -67,6 +132,10 @@ figcaption a {
     color: black;
     font-weight: 700;
 }
+
+
+/* ------------------------------------------------- */
+
 
 .floatRight {
     float: right;
