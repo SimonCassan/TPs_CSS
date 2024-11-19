@@ -8,6 +8,7 @@
 
 /* ------------------------------------------------- */
 
+
 * {
     margin: 0;
 }
@@ -33,7 +34,6 @@ nav {
 nav ul,
 nav p {
     border: 5px solid orange;
-    /* padding: 10px 15px; */
 }
 
 nav li:hover {
