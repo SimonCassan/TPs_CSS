@@ -238,18 +238,25 @@ footer {
         flex-direction: column;
     }
 
-    main .inline-scnd {
+    main .inline-scnd-container .inline-scnd {
         width: 100%;
         margin-bottom: 1.25em;
     }
 
-    main .inline-blocks-container .inline-scnd:first-of-type p {
+    main .inline-scnd-container .inline-scnd:first-of-type p {
         margin: 0;
     }
 
-    main .inline-blocks-container .inline-scnd:last-of-type p,
-    main .inline-blocks-container .inline-scnd:last-of-type h3 {
+    main .inline-scnd-container .inline-scnd:last-of-type p,
+    main .inline-scnd-container .inline-scnd:last-of-type h3 {
         margin-left: 0;
+    }
+
+    /* ------------------------ */
+    article,
+    header {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 
