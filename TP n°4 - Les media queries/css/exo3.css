@@ -6,7 +6,7 @@
 /*                  */
 /*                  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -14,22 +14,27 @@
     color: white;
 }
 
-body{
+body {
     background-color: black;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 40px 0;
     text-transform: uppercase;
 }
 
-h1{
+h1 {
     position: relative;
     font-size: 2rem;
     text-align: center;
 }
 
-h1:before{
+h1:before {
     content: "";
     position: absolute;
     top: 40%;
@@ -39,7 +44,7 @@ h1:before{
     background-color: white;
 }
 
-h1:after{
+h1:after {
     content: "";
     position: absolute;
     top: 40%;
@@ -49,17 +54,17 @@ h1:after{
     background-color: white;
 }
 
-h2{
+h2 {
     font-size: 1.35rem;
 }
 
-h3:first-of-type{
+h3:first-of-type {
     margin-top: 0;
 }
 
 /* HEADER & NAV */
 
-header{
+header {
     background-color: inherit;
     padding: 1em 0;
     position: sticky;
@@ -67,13 +72,13 @@ header{
     z-index: 1;
 }
 
-header nav{
+header nav {
     max-width: 1150px;
     margin: 0 auto;
     position: relative;
 }
 
-header nav p{
+header nav p {
     color: orange;
     position: absolute;
     top: 0;
@@ -82,43 +87,43 @@ header nav p{
     padding: 1em 2em;
 }
 
-header nav ul{
+header nav ul {
     border: 2px solid orange;
     font-size: 0;
     width: fit-content;
     margin-left: auto;
 }
 
-header nav li{
+header nav li {
     display: inline-block;
     font-size: 1rem;
 }
 
-header nav a{
+header nav a {
     display: block;
     padding: 1em 2em;
     color: orange;
 }
 
-header nav li:last-of-type a{
+header nav li:last-of-type a {
     background-color: orange;
     color: black;
 }
 
-header nav a:hover{
+header nav a:hover {
     background-color: rgb(255, 192, 74);
     color: black;
 }
 
 /* MAIN */
 
-main{
+main {
     max-width: 1150px;
     margin: 0 auto;
     text-align: justify;
 }
 
-main .illustration{
+main .illustration {
     width: 400px;
     font-size: 0;
     float: right;
@@ -126,22 +131,22 @@ main .illustration{
     margin-bottom: 1rem;
 }
 
-main .illustration img{
+main .illustration img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-a{
+a {
     color: orange;
 }
 
-main .inline-blocks-container{
+main .inline-blocks-container {
     font-size: 0;
     margin-top: 2rem;
 }
 
-main figure{
+main figure {
     display: inline-block;
     width: calc(25% - 15px);
     text-align: center;
@@ -149,52 +154,52 @@ main figure{
     box-sizing: border-box;
 }
 
-main figure:first-of-type{
+main figure:first-of-type {
     margin-left: 0;
 }
 
-main figure:last-of-type{
+main figure:last-of-type {
     margin-right: 0;
 }
 
-main figure img{
+main figure img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-main figure figcaption{
-    border-radius: 0 0 10px 10px; 
+main figure figcaption {
+    border-radius: 0 0 10px 10px;
     background-color: orange;
 }
 
-main figcaption a{
+main figcaption a {
     color: black;
     display: block;
     width: 100%;
     padding: 1rem 0;
 }
 
-main figcaption a:hover{
-    border-radius: 0 0 10px 10px; 
-    background-color: rgb(255, 192, 74);    
+main figcaption a:hover {
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(255, 192, 74);
 }
 
-main .inline-scnd-container{
+main .inline-scnd-container {
     font-size: 0;
     margin-bottom: 2rem;
     display: flex;
 }
 
-main .inline-scnd-container .inline-scnd{
+main .inline-scnd-container .inline-scnd {
     width: 50%;
     align-self: flex-end;
 }
 
-main .inline-scnd-container .inline-scnd:first-of-type p{
+main .inline-scnd-container .inline-scnd:first-of-type p {
     margin-right: 2rem;
 }
 
-main .inline-scnd img{
+main .inline-scnd img {
     /* height: 100%; */
     height: 300px;
     width: 100%;
@@ -202,7 +207,7 @@ main .inline-scnd img{
     border-radius: 10px;
 }
 
-main .inline-scnd-container:last-of-type .inline-scnd img{
+main .inline-scnd-container:last-of-type .inline-scnd img {
     max-height: 360px;
 }
 
@@ -215,10 +220,97 @@ main .inline-scnd-container .inline-scnd:last-of-type h3 {
     margin-left: 2rem;
 }
 
-footer{
+footer {
     padding: 1rem 0;
     text-align: center;
     margin-top: 2rem;
 }
 
 
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 1169px) {
+    main .inline-scnd-container {
+        flex-direction: column-reverse;
+    }
+
+    main .inline-scnd-container:last-of-type {
+        flex-direction: column;
+    }
+
+    main .inline-scnd {
+        width: 100%;
+        margin-bottom: 1.25em;
+    }
+
+    main .inline-blocks-container .inline-scnd:first-of-type p {
+        margin: 0;
+    }
+
+    main .inline-blocks-container .inline-scnd:last-of-type p,
+    main .inline-blocks-container .inline-scnd:last-of-type h3 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    h1:before,
+    h1:after {
+        content: none;
+    }
+}
+
+@media (max-width: 769px) {
+    header {
+        position: relative;
+    }
+
+    header nav p {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav li {
+        display: block;
+        text-align: center;
+    }
+
+    main .illustration {
+        float: none;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    main .illustration img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 649px) {
+    main figure {
+        width: calc(50% - 10px);
+    }
+
+    main figure:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    main figure:nth-of-type(2n+1) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 424px) {
+    main figure {
+        width: 100%;
+        margin: 0;
+    }
+}
