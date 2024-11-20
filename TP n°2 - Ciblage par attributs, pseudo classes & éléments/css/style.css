@@ -136,19 +136,19 @@ a:hover {
     text-decoration: underline;
 }
 
-article:first-of-type {
+article:first-of-type .reseau {
     color: #0E1F56
 }
 
-article:nth-of-type(2) {
+article:nth-of-type(2) .reseau {
     color: #E52D27;
 }
 
-article:nth-of-type(3) {
+article:nth-of-type(3) .reseau {
     color: #55ACEE;
 }
 
-article:last-of-type {
+article:last-of-type .reseau {
     color: #C13584;
 }
 
