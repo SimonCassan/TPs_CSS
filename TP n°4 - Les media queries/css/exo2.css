@@ -85,3 +85,50 @@ main {
 nav {
     padding: 20px;
 }
+
+@media (min-width: 1024px) {
+    main img {
+        width: 500px;
+    }
+
+    .imageFlottanteDroite,
+    .imageFlottanteGauche {
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+
+    .imageFlottanteGauche {
+        float: left;
+    }
+
+    .imageFlottanteDroite {
+        float: right;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav p {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    nav a {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    nav li:last-of-type a {
+        padding-right: 0;
+    }
+}
