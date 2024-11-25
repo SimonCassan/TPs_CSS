@@ -125,7 +125,7 @@ article a[href^="https"] {
     color: #0E1F56;
 }
 
-main a[rel="no-follow"] {
+main a[rel="nofollow"] {
     font-weight: 900;
 }
 
