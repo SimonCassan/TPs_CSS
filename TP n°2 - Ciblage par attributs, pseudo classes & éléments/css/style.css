@@ -24,6 +24,19 @@ main {
     margin: 0 auto;
 }
 
+main img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin: 40px 0 20px;
+    /* maintient son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    object-fit: cover;
+}
+
+main article {
+    margin-top: 40px;
+}
+
 footer {
     max-width: 100%;
     background-color: #061622;
@@ -58,6 +71,20 @@ h3 {
     margin-bottom: 25px;
 }
 
+article {
+    position: relative;
+}
+
+article p {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+a {
+    color: #3C93F7;
+    text-decoration: none;
+}
+
 ul {
     max-width: 1150px;
     margin: 0 auto;
@@ -69,33 +96,6 @@ ul {
 
 li {
     width: 25%;
-}
-
-main img {
-    width: 100%;
-    height: 350px;
-    border-radius: 10px;
-    margin: 40px 0 20px;
-    /* maintient son ratio d'affichage tout en remplissant toute la boîte de contenu */
-    object-fit: cover;
-}
-
-article {
-    position: relative;
-}
-
-main article {
-    margin-top: 40px;
-}
-
-article p {
-    margin-top: 20px;
-    padding-left: 40px;
-}
-
-a {
-    color: #3C93F7;
-    text-decoration: none;
 }
 
 li a {
