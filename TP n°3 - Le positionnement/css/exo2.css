@@ -4,22 +4,15 @@
     font-family: sans-serif;
 }
 
-
-/* ---------------------------------- */
-
+/* ---------------------------------------------------- */
 
 nav {
     max-width: 1150px;
-    background-color: black;
     margin: auto;
-    padding: 30px 0;
+    background-color: black;
     display: flex;
     align-items: center;
-}
-
-nav img {
-    width: 45px;
-    padding-left: 15px;
+    padding: 30px 0;
 }
 
 main {
@@ -35,8 +28,7 @@ main img {
     width: 300px;
 }
 
-
-/* ---------------------------------- */
+/* ---------------------------------------------------- */
 
 
 h1,
@@ -50,22 +42,39 @@ ul {
 }
 
 li {
-    display: inline-block;
+    display: inline;
+    padding-right: 20px;
 }
 
-li a {
-    padding: 0 15px;
+a {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------------- */
+
+.logo {
+    float: left;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-left: 1em;
+}
+
+.logo,
+a {
     color: white;
 }
 
-
-/* ---------------------------------- */
-
+.justeLeTexte {
+    text-align: justify;
+}
 
 .imageFlottanteDroite {
     float: right;
+    margin-left: 1em;
 }
 
 .imageFlottanteGauche {
     float: left;
+    margin-right: 1em;
 }
