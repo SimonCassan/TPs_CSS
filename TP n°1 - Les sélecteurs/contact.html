@@ -4,40 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exercice de CSS sur un formulaire">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="icon.jpg" type="image/jpg">
+  <meta name="description" content="Exercice de CSS sur un formulaire de contact">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./icon.jpg" type="image/jpg">
   <title>Formulaire de contact</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html#art1">Extrait d'article n°01</a></li>
-      <li><a href="index.html#art2">Extrait d'article n°02</a></li>
-      <li><a href="index.html#art3">Extrait d'article n°03</a></li>
-      <li><a href="index.html#art4">Extrait d'article n°04</a></li>
-      <li><a href="index.html#art5">Extrait d'article n°05</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <header>
-      <h1>Formulaire de contact</h1>
-    </header>
-    <form action="#" method="post">
-      <div>
-        <input type="text" name="name" placeholder="Votre nom">
-      </div>
-      <div>
-        <input type="text" name="subject" placeholder="Votre sujet">
-      </div>
-      <div>
-        <textarea name="message" placeholder="Votre message"></textarea>
-      </div>
-      <!-- <button type="submit" class="envoi">Envoyer</button> -->
-      <input type="submit" class="envoi" value="Envoyer">
-    </form>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="#">Onglet 2</a></li>
+        <li><a href="#">Onglet 3</a></li>
+        <li><a href="#">Onglet 4</a></li>
+        <li><a href="#">Formulaire</a></li>
+      </ul>
+    </nav>
+    <h1>Formulaire de contact</h1>
+  </header>
+  <form action="#" method="post">
+    <div><input type="text" name="lastname" placeholder="Nom"></div>
+    <div><input type="text" name="subject" placeholder="Votre sujet"></div>
+    <div><textarea name="msg" placeholder="Votre message"></textarea></div>
+    <input type="button" class="envoi" value="Envoyer">
+  </form>
 </body>
 
 </html>
